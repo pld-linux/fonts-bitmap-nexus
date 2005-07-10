@@ -8,7 +8,7 @@ Release:	0.1
 License:	BSD
 Group:		X11/Applications
 #Source0:	http://dl.sourceforge.net/enlightenment/%{_pkgname}-%{version}.tar.gz
-Source0:	ftp://ftp.sparky.homelinux.org/snaps/enli/misc/%{_pkgname}-%{_snap}.tar.gz
+Source0:	http://sparky.homelinux.org/snaps/enli/misc/%{_pkgname}-%{_snap}.tar.gz
 # Source0-md5:	0c430037a88e7d986da8bfda227c061a
 URL:		http://enlightenment.org/
 BuildRequires:	XFree86-devel
