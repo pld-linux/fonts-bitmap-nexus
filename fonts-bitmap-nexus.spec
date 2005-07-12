@@ -1,4 +1,5 @@
 Summary:	A sans-serif fixed font
+Summary(pl):	Font sans-serif sta³ej szeroko¶ci
 %define	_pkgname	nexus
 Name:		fonts-bitmap-nexus
 Version:	0.0.2
@@ -18,6 +19,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A sans-serif, fixed font with iso8859 encoding. Only available as 10
 point with medium weight.
+
+%description -l pl
+Font sans-serif sta³ej szeroko¶ci z kodowaniem iso8859. Dostêpny tylko
+jako 10-punktowy o ¶redniej grubo¶ci.
 
 %prep
 %setup -q -n %{_pkgname}
