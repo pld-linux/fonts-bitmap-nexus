@@ -13,6 +13,7 @@ Source0:	http://sparky.homelinux.org/snaps/enli/misc/%{_pkgname}-%{_snap}.tar.gz
 # Source0-md5:	0c430037a88e7d986da8bfda227c061a
 URL:		http://enlightenment.org/
 BuildRequires:	XFree86-devel
+Requires(post,postun):	fontpostinst
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
