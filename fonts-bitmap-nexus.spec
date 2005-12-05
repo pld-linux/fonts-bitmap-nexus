@@ -14,6 +14,7 @@ Source0:	http://sparky.homelinux.org/snaps/enli/misc/%{_pkgname}-%{_snap}.tar.gz
 URL:		http://enlightenment.org/
 BuildRequires:	XFree86-devel
 Requires(post,postun):	fontpostinst
+Requires:	%{_fontsdir}/misc
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -34,8 +35,9 @@ gzip -9nf nex6x10.pcf
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_fontsdir}
-install nex6x10.pcf.gz $RPM_BUILD_ROOT%{_fontsdir}
+install -d $RPM_BUILD_ROOT%{_fontsdir}/misc
+
+install nex6x10.pcf.gz $RPM_BUILD_ROOT%{_fontsdir}/misc
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -49,4 +51,4 @@ fontpostinst misc
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING README
-%{_fontsdir}/nex6x10.pcf.gz
+%{_fontsdir}/misc/nex6x10.pcf.gz
