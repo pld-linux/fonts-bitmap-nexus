@@ -12,7 +12,7 @@ Group:		X11/Applications
 Source0:	http://sparky.homelinux.org/snaps/enli/misc/%{_pkgname}-%{_snap}.tar.gz
 # Source0-md5:	0c430037a88e7d986da8bfda227c061a
 URL:		http://enlightenment.org/
-BuildRequires:	XFree86-devel
+BuildRequires:	xorg-app-bdftopcf
 Requires(post,postun):	fontpostinst
 Requires:	%{_fontsdir}/misc
 BuildArch:	noarch
@@ -30,7 +30,7 @@ jako 10-punktowy o ¶redniej grubo¶ci.
 %setup -q -n %{_pkgname}
 
 %build
-/usr/bin/X11/bdftopcf nex6x10.bdf > nex6x10.pcf
+bdftopcf nex6x10.bdf > nex6x10.pcf
 gzip -9nf nex6x10.pcf
 
 %install
