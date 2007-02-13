@@ -1,5 +1,5 @@
 Summary:	A sans-serif fixed font
-Summary(pl.UTF-8):   Font sans-serif stałej szerokości
+Summary(pl.UTF-8):	Font sans-serif stałej szerokości
 %define	_pkgname	nexus
 Name:		fonts-bitmap-nexus
 Version:	0.0.2
